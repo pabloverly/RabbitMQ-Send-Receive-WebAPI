@@ -14,7 +14,7 @@ internal static class AppExtensions
 
             busConfigurator.UsingRabbitMq((ctx, cfg) =>
             {
-                cfg.Host("amqp://guest:guest@191.252.191.68:5672");
+                cfg.Host("amqp://guest:guest@IP_SERVIDOR");
                 cfg.ConfigureEndpoints(ctx);
             });
         });
